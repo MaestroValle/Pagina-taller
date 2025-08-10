@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maestro Valle · Taller Mecánico</title>
+  <meta name="description" content="Taller mecánico Maestro Valle: mantenimiento, frenos, scanner, revisión a domicilio, motor, transmisión. Atención rápida y honesta." />
+  <meta property="og:title" content="Maestro Valle · Taller Mecánico" />
+  <meta property="og:description" content="Mecánica confiable y rápida para tu vehículo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1600&auto=format&fit=crop" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-2">
+        <span class="text-2xl font-extrabold tracking-tight">Maestro <span class="text-blue-600">Valle</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#servicios" class="hover:text-blue-600">Servicios</a>
+        <a href="#diferenciales" class="hover:text-blue-600">Por qué elegirnos</a>
+        <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+        <a href="#ubicacion" class="hover:text-blue-600">Ubicación</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/56912345678?text=Hola%20Maestro%20Valle,%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noreferrer" class="px-4 py-2 rounded-xl bg-green-500 text-white font-semibold hover:opacity-90">WhatsApp</a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden border-t bg-white">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm font-medium">
+        <a href="#servicios" class="hover:text-blue-600">Servicios</a>
+        <a href="#diferenciales" class="hover:text-blue-600">Por qué elegirnos</a>
+        <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+        <a href="#ubicacion" class="hover:text-blue-600">Ubicación</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1920&auto=format&fit=crop" alt="Taller mecánico" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/50"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 py-24 md:py-36 text-white">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Mecánica confiable y rápida<br>para tu vehículo</h1>
+      <p class="mt-4 text-lg md:text-xl max-w-2xl">En <span class="font-bold">Maestro Valle</span> cuidamos tu auto como si fuera nuestro. Diagnóstico preciso, repuestos de calidad y atención honesta.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#servicios" class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 font-semibold">Ver servicios</a>
+        <a href="#contacto" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 font-semibold">Agendar revisión</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Badges -->
+  <section class="bg-white border-y">
+    <div class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+      <div class="flex items-center gap-3"><span class="inline-flex w-5 h-5 items-center justify-center">🛡️</span><span>Garantía en mano de obra</span></div>
+      <div class="flex items-center gap-3"><span class="inline-flex w-5 h-5 items-center justify-center">⏱️</span><span>Entrega a tiempo</span></div>
+      <div class="flex items-center gap-3"><span class="inline-flex w-5 h-5 items-center justify-center">🏅</span><span>Repuestos de calidad</span></div>
+      <div class="flex items-center gap-3"><span class="inline-flex w-5 h-5 items-center justify-center">🔧</span><span>Diagnóstico profesional</span></div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="max-w-7xl mx-auto px-4 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold">Servicios</h2>
+    <p class="mt-2 text-gray-600">Todo lo que tu auto necesita, en un solo lugar.</p>
+
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Mantenimiento -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="h-44 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1200&auto=format&fit=crop" alt="Mantenimiento preventivo" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold">Mantenimiento preventivo</h3>
+          <ul class="mt-3 space-y-1 text-sm text-gray-600 list-disc list-inside">
+            <li>Cambio de aceite y filtros</li>
+            <li>Chequeo general</li>
+            <li>Scanner básico</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Frenos -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="h-44 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1571607380053-316291e03755?q=80&w=1200&auto=format&fit=crop" alt="Sistema de frenos" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold">Sistema de frenos</h3>
+          <ul class="mt-3 space-y-1 text-sm text-gray-600 list-disc list-inside">
+            <li>Pastillas y discos</li>
+            <li>Rectificación</li>
+            <li>Purgado y líquido</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Scanner -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="h-44 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1616776005756-cf89bfb0fd3b?q=80&w=1200&auto=format&fit=crop" alt="Scanner y diagnóstico" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold">Scanner y diagnóstico</h3>
+          <ul class="mt-3 space-y-1 text-sm text-gray-600 list-disc list-inside">
+            <li>Lectura de códigos</li>
+            <li>Diagnóstico eléctrico</li>
+            <li>Reseteo de fallas</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Domicilio -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="h-44 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1614332287897-cdc485fa5626?q=80&w=1200&auto=format&fit=crop" alt="Revisión a domicilio" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold">Revisión a domicilio</h3>
+          <ul class="mt-3 space-y-1 text-sm text-gray-600 list-disc list-inside">
+            <li>Chequeo básico</li>
+            <li>Cambio de batería</li>
+            <li>Asistencia menor</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Motor -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="h-44 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1589884628400-5bbc9df9efd8?q=80&w=1200&auto=format&fit=crop" alt="Servicio de motor" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold">Motor</h3>
+          <ul class="mt-3 space-y-1 text-sm text-gray-600 list-disc list-inside">
+            <li>Ajustes menores</li>
+            <li>Juntas y empaquetaduras</li>
+            <li>Corrección de fugas</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Transmisión -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition-shadow overflow-hidden">
+        <div class="h-44 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1628157588553-5a377f57fdd3?q=80&w=1200&auto=format&fit=crop" alt="Servicio de transmisión" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold">Transmisión</h3>
+          <ul class="mt-3 space-y-1 text-sm text-gray-600 list-disc list-inside">
+            <li>Mantención MT/AT</li>
+            <li>Cambio de fluidos</li>
+            <li>Inspección de ejes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-12 bg-blue-600 text-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <h3 class="text-2xl font-bold">¿Necesitas una cotización ahora?</h3>
+        <p class="text-white/90">Escríbenos por WhatsApp y responderemos al tiro.</p>
+      </div>
+      <a href="https://wa.me/56912345678?text=Hola%20Maestro%20Valle,%20necesito%20cotizar%20un%20servicio" target="_blank" rel="noreferrer" class="px-6 py-3 rounded-xl bg-white text-blue-700 font-semibold hover:bg-white/90">Chatear por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Diferenciales -->
+  <section id="diferenciales" class="bg-white border-y">
+    <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-50 rounded-2xl p-6 border">
+        <h4 class="font-bold text-lg">Transparencia total</h4>
+        <p class="mt-2 text-gray-600">Te mostramos los repuestos y el presupuesto antes de intervenir.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 border">
+        <h4 class="font-bold text-lg">Atención rápida</h4>
+        <p class="mt-2 text-gray-600">Agenda en línea y tiempos de entrega claros.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 border">
+        <h4 class="font-bold text-lg">Garantía real</h4>
+        <p class="mt-2 text-gray-600">Respaldo por escrito en cada servicio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="max-w-7xl mx-auto px-4 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold">Contacto directo</h2>
+    <p class="mt-2 text-gray-600">Escríbenos o llámanos para coordinar tu servicio.</p>
+
+    <div class="mt-8 grid md:grid-cols-2 gap-8">
+      <div class="space-y-4">
+        <a href="tel:+56912345678" class="block">
+          <div class="flex items-center gap-3 p-3 rounded-xl border bg-white hover:shadow">
+            <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">📞</div>
+            <div>
+              <div class="text-xs text-gray-500">Teléfono</div>
+              <div class="font-semibold">+56 9 1234 5678</div>
+            </div>
+          </div>
+        </a>
+        <a href="https://wa.me/56912345678" target="_blank" rel="noreferrer" class="block">
+          <div class="flex items-center gap-3 p-3 rounded-xl border bg-white hover:shadow">
+            <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">💬</div>
+            <div>
+              <div class="text-xs text-gray-500">WhatsApp</div>
+              <div class="font-semibold">+56 9 1234 5678</div>
+            </div>
+          </div>
+        </a>
+        <a href="mailto:contacto@maestrovalle.cl" class="block">
+          <div class="flex items-center gap-3 p-3 rounded-xl border bg-white hover:shadow">
+            <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">✉️</div>
+            <div>
+              <div class="text-xs text-gray-500">Correo</div>
+              <div class="font-semibold">contacto@maestrovalle.cl</div>
+            </div>
+          </div>
+        </a>
+        <div class="flex items-center gap-3 p-3 rounded-xl border bg-white">
+          <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">📍</div>
+          <div>
+            <div class="text-xs text-gray-500">Dirección</div>
+            <div class="font-semibold">(tu dirección aquí)</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-xl border bg-white">
+          <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center">🕘</div>
+          <div>
+            <div class="text-xs text-gray-500">Horario</div>
+            <div class="font-semibold">Lun–Sáb 09:00–19:00</div>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="bg-white rounded-2xl shadow p-6 space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Nombre</label>
+          <input class="mt-1 w-full border rounded-xl p-3 outline-none focus:ring-2 focus:ring-blue-600" placeholder="Tu nombre" required>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium">Teléfono</label>
+            <input class="mt-1 w-full border rounded-xl p-3 outline-none focus:ring-2 focus:ring-blue-600" placeholder="+56 9 ..." required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Correo</label>
+            <input type="email" class="mt-1 w-full border rounded-xl p-3 outline-none focus:ring-2 focus:ring-blue-600" placeholder="tucorreo@dominio.cl" required>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Servicio</label>
+          <select class="mt-1 w-full border rounded-xl p-3 outline-none focus:ring-2 focus:ring-blue-600">
+            <option>Mantenimiento</option>
+            <option>Sistema de frenos</option>
+            <option>Scanner y diagnóstico</option>
+            <option>Revisión a domicilio</option>
+            <option>Motor</option>
+            <option>Transmisión</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Mensaje</label>
+          <textarea rows="4" class="mt-1 w-full border rounded-xl p-3 outline-none focus:ring-2 focus:ring-blue-600" placeholder="Cuéntanos qué necesitas"></textarea>
+        </div>
+        <button class="w-full px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold">Enviar consulta</button>
+        <p class="text-xs text-gray-500 text-center">* Formulario de demostración. Podemos conectarlo a tu correo o WhatsApp.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Ubicación -->
+  <section id="ubicacion" class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-bold">Cómo llegar</h2>
+      <p class="mt-2 text-gray-600">Actualiza tu dirección y te dejamos el mapa listo.</p>
+      <div class="mt-6 aspect-video w-full overflow-hidden rounded-2xl shadow">
+        <iframe title="Mapa" src="https://www.google.com/maps?q=Concepci%C3%B3n%2C%20Chile&output=embed" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="text-xl font-extrabold">Maestro <span class="text-blue-400">Valle</span></div>
+        <p class="mt-2 text-sm text-gray-400">Servicio técnico automotriz con foco en transparencia, calidad y rapidez.</p>
+      </div>
+      <div>
+        <div class="font-semibold mb-3">Contacto</div>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-white" href="tel:+56912345678">+56 9 1234 5678</a></li>
+          <li><a class="hover:text-white" href="mailto:contacto@maestrovalle.cl">contacto@maestrovalle.cl</a></li>
+          <li><a class="hover:text-white" href="https://wa.me/56912345678" target="_blank" rel="noreferrer">WhatsApp directo</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-3">Horario</div>
+        <ul class="space-y-2 text-sm">
+          <li>Lun a Sáb: 09:00 – 19:00</li>
+          <li>Domingo: Cerrado</li>
+        </ul>
+      </div>
+    </div>
+    <div class="px-4 py-4 border-t border-white/10 text-xs text-center text-gray-400">© <span id="year"></span> Maestro Valle. Todos los derechos reservados.</div>
+  </footer>
+
+  <script>
+    // Año dinámico en footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Menú móvil
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+    // Form demo
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Gracias por tu mensaje. Pronto te contactaremos.');
+    });
+  </script>
+</body>
+</html>
